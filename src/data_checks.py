@@ -54,7 +54,7 @@ def check_dtypes(
     expected — необязательный словарь {колонка: 'numeric'|'category'|'string'}.
     """
     expected = expected or {
-        "Species": "category",
+        "Species": "str",
         **{c: "numeric" for c in NUMERIC_COLS},
     }
     rows = []
